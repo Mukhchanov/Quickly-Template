@@ -1,0 +1,19 @@
+.logos {
+    padding: 3rem 0;
+    margin-top: 5rem;
+    &__box {
+        @media(max-width: 36.12em) {
+            padding: 0 3rem;
+        }
+    }
+
+    &__imgbox {
+        @media(max-width: 62em) {
+            margin-top: 2rem;
+        }
+        img {
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.cta {
+    padding: 3rem 0;
+    margin-top: 5rem;
+    &__text {
+        padding: 4rem 0;
+        @media (max-width: 62em) {
+            padding: 0 0;
+        }
+
+        @media (max-width: 48em) {
+            padding: 5rem 4rem;
+        }
+        h2 {
+            font-size: $header-font-medium;
+        }
+
+        p {
+            font-size: $font-size-medium;
+            margin-top: 2rem
+        }
+
+        a {
+            @include primary-color-btn;
+            background-color: $secondary-color;
+            color: $primary-color;
+            margin-top: 6rem;
+            position: absolute;
+            transition: all .2s;
+            &:hover {
+                @include light-btn-hover;
+            }
+            @media (max-width: 62em) {
+                margin-top: 3rem;
+            }
+        }
+    }
+
+    &__img {
+        @media (max-width: 48em) {
+            padding: 0 4rem;
+            margin-top: 5rem;
+        }
+        img {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}

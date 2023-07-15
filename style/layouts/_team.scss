@@ -1,0 +1,61 @@
+.team {
+    padding: 3rem 0;
+    margin-top: 5rem;
+    &__header {
+        margin-bottom: 3rem;
+        @media (max-width: 36.12em) {
+            padding: 0 3rem;
+        }
+        h2 {
+            font-size: $header-font-medium;
+        }
+        p {
+            font-size: $font-size-small;
+            margin-top: 1rem;
+        }
+    }
+
+    &__members {
+        @media (max-width: 36.12em) {
+            padding: 0 3rem;
+        }
+    }
+
+    &__img-box {
+        margin-top: 2rem;
+        h4 {
+            font-size: $font-size-large;
+            margin-top: 2rem;
+        }
+        p {
+            font-size: $font-size-x-small;
+            color: #20484F;
+        }
+        img {
+            width: 90%;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+    }
+
+    &__link-list {
+        li {
+            border: 1px solid #20484f78;
+            border-radius: 50px;
+            list-style-type: none;
+            cursor: pointer;
+            transition: all .2s;
+            &:not(:last-child) {
+                margin-right: 1.5rem;
+            }
+            &:hover {
+                border-radius: 8px;
+                border-color: #20484F;
+            }
+            a {
+                padding: .7rem;
+            }
+        }
+    }
+}

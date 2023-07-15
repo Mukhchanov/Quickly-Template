@@ -1,0 +1,67 @@
+.metrics {
+    padding: 3rem 0;
+
+    &__column {
+        border-bottom: 2px solid $primary-color;
+        padding: 3rem 0;
+    }
+
+    &__header {
+        @media(max-width: 48em) {
+            flex-wrap: wrap;
+            padding: 0 4rem;
+        }
+
+        &-box {
+            h2 {
+                font-size: $header-font-small;
+            }
+
+            p {
+                font-size: $font-size-small;
+            }
+            @media(max-width: 48em) {
+                border-bottom: none;
+            }
+        }
+
+        &-signbtn {
+            @media(max-width: 48em) {
+                justify-content: start !important;
+            }
+        }
+
+        &-btnbox {
+            a {
+                @include primary-color-btn;
+                transition:  all .2s;
+                &:hover {
+                    @include dark-btn-hover;
+                }
+            }
+        }
+    }
+
+    &__statistics {
+        @media(max-width: 48em) {
+            padding: 0 4rem;
+            margin-top: 2rem;
+        }
+        padding: 3rem 0;
+        flex-wrap: wrap;
+        &-box { color: $primary-color; }
+
+        &-numbers {
+            font-size: $header-font-large;
+        }
+
+        &-headers {
+            font-size: $font-size-medium;
+            font-weight: 500;
+        }
+
+        &-text {
+            font-size: $font-size-small;
+        }
+    }
+}

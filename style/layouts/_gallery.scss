@@ -1,0 +1,37 @@
+.gallery {
+    padding: 3rem 0;
+    margin-top: 5rem;
+    &__header {
+        
+        justify-content: center;
+
+        &-box {
+            padding: 0 2rem;
+            h2 { font-size: $header-font-medium; }
+
+            p { 
+                font-size: $font-size-small; 
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    &__image {
+        padding: 0 2rem;
+        margin-top: 4rem;
+        &-box {
+            @media(max-width: 36.12em) {
+                margin-top: 2rem;
+            }
+            @media(max-width: 48em) {
+                margin-top: 2rem;
+            }
+            padding: 0 1rem;
+            img {
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}

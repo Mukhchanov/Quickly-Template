@@ -1,0 +1,87 @@
+.hero {
+    padding: 3rem 0;
+
+    &__imgbox {
+        padding: 0 2rem;
+        object-fit: cover;
+
+        @media (max-width: 36.12em) {
+            padding: 0 4rem;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__formbox {
+
+        @media (max-width: 36.12em) {
+            padding: 1rem 4rem;
+        }
+
+        @media (max-width: 48em) {
+            padding: 0rem 2rem;
+        }
+
+        @media (max-width: 62em) {
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 75em) {
+            padding: 0 2rem;
+        }
+
+        padding: 1rem 3rem;
+
+        h2 {
+            font-size: $header-font-medium;
+        }
+
+        p {
+            margin-top: 2rem;
+            font-size: $font-size-medium;
+        }
+    }
+
+    &__form {
+        &:first-child {
+            margin-top: 4rem;
+        }
+        &-group {
+            input {
+                width: 100%;
+                padding: 1rem;
+                border:  1px solid $gray-shade;
+                border-radius: $primary-border-radius;
+                font-size: $font-size-small;
+            }
+        }
+
+        &-checkbox {
+            margin-top: 2rem;
+            input {
+                width: 2rem;
+                height: 2rem;
+            }
+            span {
+                font-size: $font-size-medium;
+                margin-left: 1rem;
+            }
+        }
+
+        &-btnbox {
+            margin-top: 3rem;
+            .heroform-btn {
+                @include primary-color-btn;
+            }
+        }
+    }
+}
+
+.heroform-btn {
+    transition: all .2s;
+    &:hover {
+        @include dark-btn-hover;
+    }
+}

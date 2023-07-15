@@ -1,0 +1,94 @@
+.pricing {
+    padding: 3rem 0;
+    margin-top: 5rem;
+    &__header {
+        @media (max-width: 48em) {
+            padding: 0 4rem;
+        }
+        h2 {
+            font-size: $header-font-medium;
+        }
+    }
+
+    &__packages {
+        padding: 0;
+    }
+
+    &__package-box {
+        padding: 1rem;
+        margin-top: 5rem;
+        @media (max-width: 62em) {
+            margin-top: 5rem;
+        }
+        @media (max-width: 48em) {
+            padding: 0 4rem;
+            margin-top: 8rem;
+        }
+        h4 {
+            font-size: $font-size-medium;
+            font-weight: bold;
+        }
+
+        &-design {
+            position: relative;
+            padding: 3rem;
+            border-radius: 24px;
+            background-color: #FAFAFA;
+            height: 110%;
+        }
+    }
+
+    &__description {
+        font-size: $font-size-small;
+        color: #20484F;
+    }
+
+    &__package-list {
+        list-style-type: none;
+        display: inline-block;
+        margin-top: 3rem;
+    }
+
+    &__package-item {
+        color: $primary-color;
+        font-size: $font-size-medium;
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 1.6rem;
+        }
+
+        img {
+            color: $primary-color;
+            padding: .5rem;
+            background-color: $secondary-color;
+            margin-right: 1rem;
+            border-radius: 7px;
+        }
+    }
+
+    &__btnbox {
+        position: absolute;
+        bottom: 5%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+
+    &__btn {
+        @include primary-color-btn;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transition: all .2s;
+        &:hover {
+            background-color: $secondary-color;
+            color: $primary-color;
+        }
+    }
+
+    &__price {
+        font-size: 5rem;
+    }
+}

@@ -1,0 +1,66 @@
+.footer {
+    padding: 3rem 0;
+    margin-top: 10rem;
+    &__links-box {
+        @media (max-width: 36.12em) {
+            padding: 0 3rem;
+        }
+        h3 {
+            font-size: $font-size-medium;
+            margin-bottom: 2.5rem;
+            color: $primary-color;
+        }
+    }
+
+    &__address {
+        img {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__resources {
+        @media (max-width: 62em) {
+            margin-top: 3rem;
+        }
+    }
+
+    &__product {
+        @media (max-width: 62em) {
+            margin-top: 3rem;
+        }
+    }
+
+    &__item {
+        list-style-type: none;
+        font-size: $font-size-small;
+        color: $primary-color;
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none !important;
+        font-size: $font-size-small;
+        color: $primary-color;
+        cursor: pointer;
+        border-bottom: 2px solid rgba(0, 0, 0, 0);
+        &:hover {
+            border-bottom: 2px solid $primary-color;
+            color: black;
+        }
+    }
+
+    &__copyright {
+        p {
+            font-size: $font-size-x-small;
+            color: $primary-color;
+        }
+    }
+}
+
+.container__copyright {
+    padding: 3rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid #20484f7a;
+}
